@@ -1,16 +1,160 @@
-# React + Vite
+# User API React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that retrieves user information from a REST API and displays it in a clean, structured table. The project demonstrates API integration using React Hooks, including `useState()` and `useEffect()`, along with loading and error handling.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[View Live Demo](https://muthukoornandini.github.io/users-api-react/)**
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This application fetches user information from the JSONPlaceholder REST API and dynamically displays the retrieved data.
 
-## Expanding the ESLint configuration
+The application provides:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* User ID
+* Name
+* Username
+* Email
+* Loading state while data is being retrieved
+* Error handling when the API request fails
+
+## 🛠️ Technologies Used
+
+* React
+* JavaScript
+* Vite
+* React Hooks
+* REST API
+* HTML
+* CSS
+* Git & GitHub
+* GitHub Pages
+
+## 🔗 API Used
+
+The application retrieves data from:
+
+**JSONPlaceholder Users API**
+
+`https://jsonplaceholder.typicode.com/users`
+
+## ⚙️ React Concepts Demonstrated
+
+### useState()
+
+Used to store:
+
+* User information
+* Loading status
+* Error messages
+
+### useEffect()
+
+Used to execute the API request when the component is loaded.
+
+### fetch()
+
+Used to retrieve user information from the REST API.
+
+## 📊 Application Flow
+
+```text
+React Application
+       ↓
+   useEffect()
+       ↓
+     fetch()
+       ↓
+JSONPlaceholder API
+       ↓
+   User Data
+       ↓
+    useState()
+       ↓
+ User List Table
+```
+
+## 📋 Features
+
+* Fetches user data from an external API
+* Displays users dynamically
+* Shows `Loading...` while the request is in progress
+* Displays an error message if the request fails
+* Responsive React-based structure
+* Deployed using GitHub Pages
+
+## 💻 Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/muthukoornandini/users-api-react.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd users-api-react
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+## 📁 Project Structure
+
+```text
+users-api-react/
+│
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── Users.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🌐 Deployment
+
+The application is deployed using **GitHub Pages**.
+
+### Live Application
+
+**https://muthukoornandini.github.io/users-api-react/**
+
+## 🎯 Learning Outcome
+
+This project provides practical experience in:
+
+* Building React components
+* Managing component state
+* Using React Hooks
+* Calling REST APIs
+* Handling asynchronous data
+* Displaying API data dynamically
+* Implementing loading and error states
+* Deploying a React application
+
+## 👩‍💻 Author
+
+**Muthukoornandini**
+
+GitHub: **[muthukoornandini](https://github.com/muthukoornandini)**
